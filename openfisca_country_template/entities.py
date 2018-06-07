@@ -55,7 +55,22 @@ Person = build_entity(
 
     For more information, see: https://openfisca.org/doc/coding-the-legislation/50_entities.html
     ''',
+    roles = [
+        {
+            'key': 'part',
+            'plural': 'parts',
+            'label': u'Parts'
+            }
+        ]
+    )
+
+PersonPart = build_entity(
+    key = "part",
+    plural = "parts",
+    label = u'Part',
+    doc = '''
+    ''',
     is_person = True,
     )
 
-entities = [Household, Person]
+entities = [Household, Person, PersonPart]

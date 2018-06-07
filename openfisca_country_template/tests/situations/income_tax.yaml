@@ -10,12 +10,17 @@
       children: [ Michael ]
       accommodation_size: 100
       housing_occupancy_status: tenant
+  parts:
+    - id: Alicia
+    - id: Michael
   persons:
     - id: Alicia
+      parts: [Alicia]
       birth: 1961-01-15
       salary:
        2017-01: 2400
     - id: Michael
+      parts: [Michael]
       birth: 2002-01-15
       salary:
        2016: 0
@@ -23,3 +28,6 @@
     housing_tax:
       2017: 1000
     income_tax: [ 360, 0 ]
+    total_benefits: [ 600 ]
+    social_security_contribution: [ 48, 0 ]
+    total_taxes: [ 360 + 48 + 1000 / 12 ]
