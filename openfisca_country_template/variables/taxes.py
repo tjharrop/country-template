@@ -64,3 +64,14 @@ class housing_tax(Variable):
 
         # The tax is applied only if the household owns or rents its main residency
         return (owner + tenant) * tax_amount
+
+
+class tax_incentive(Variable):
+    value_type = float
+    entity = Person
+    definition_period = MONTH
+    label = "Tax incentive that is equivalent to a third of the salary"
+
+    def formula(person, period, parameters):
+        salary = person('salary', period)
+        return salary/3

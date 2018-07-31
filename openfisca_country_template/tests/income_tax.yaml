@@ -7,3 +7,29 @@
     salary: 10000
   output_variables:
     income_tax: 1500
+
+- name: Someone making 10000 should get a 3333 tax incentive
+  period: 2016-01
+  input_variables:
+    salary: 10000
+  output_variables:
+    tax_incentive:
+      2016-01: 3333.3333
+
+- name: Someone making 1000 should get a 333 tax incentive
+  period: 2016-01
+  input_variables:
+    salary: 1000
+  output_variables:
+    tax_incentive:
+      2016-01: 333.3333
+# AssertionError: b'tax_incentive@2016-01: '[333.33334351] differs from [333.33331299] with an absolute margin [3.05175781e-05] > 0
+
+- name: Someone making 100 should get a 33 tax incentive
+  period: 2016-01
+  input_variables:
+    salary: 100
+  output_variables:
+    tax_incentive:
+      2016-01: 33.3333
+# AssertionError: b'tax_incentive@2016-01: '[33.33333206] differs from [33.33330154] with an absolute margin [3.05175781e-05] > 0

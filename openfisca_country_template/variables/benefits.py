@@ -59,3 +59,4 @@ class pension(Variable):
         '''
         age_condition = person('age', period) >= parameters(period).general.age_of_retirement
         return age_condition
+
