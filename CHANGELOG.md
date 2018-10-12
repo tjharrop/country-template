@@ -202,7 +202,7 @@ name: Household living in a 40 sq. metres accommodation while being free lodgers
       2017-01: 40
     housing_occupancy_status:
       2017-01: 2
-  output_variables:
+  output:
     housing_tax: 0
 ```
 Now:
@@ -215,7 +215,7 @@ name: Household living in a 40 sq. metres accommodation while being free lodgers
       2017-01: 40
     housing_occupancy_status:
       2017-01: free_lodger
-  output_variables:
+  output:
     housing_tax: 0
 ```
 
