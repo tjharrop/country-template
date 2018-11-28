@@ -1,5 +1,11 @@
 # Changelog
 
+### 3.6.O - [#??](https://github.com/openfisca/country-template/pull/??)
+
+* Minor change
+* Details:
+  - Adapt to OpenFisca Core v25
+
 ### 3.5.4 - [#65](https://github.com/openfisca/country-template/pull/65)
 
 * Minor change
